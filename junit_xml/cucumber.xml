@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="47.187145">
+<testcase classname="Form Authentication" name="Navigate to Form Authentication page" time="5.992806">
+<system-out><![CDATA[Given user navigate to url..................................................passed
+When user click on login Form Authentication link...........................passed
+Then user should navigate to login page.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Form Authentication" name="Verify login functionality" time="0.992836">
+<system-out><![CDATA[Given user is at Form Authentication page...................................passed
+When user enters username "tomsmith"........................................passed
+And user enters password "SuperSecretPassword!123"..........................passed
+Then user clicks on login button............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Form Authentication" name="Verify login functionality 2" time="0.99141">
+<system-out><![CDATA[Given user is at Form Authentication page...................................passed
+When user enters username "tomsmith123".....................................passed
+And user enters password "SuperSecretPassword!".............................passed
+Then user clicks on login button............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Form Authentication" name="Verify login functionality 3" time="1.559451">
+<system-out><![CDATA[Given user is at Form Authentication page...................................passed
+When user enters username "tomsmith"........................................passed
+And user enters password "SuperSecretPassword!".............................passed
+Then user clicks on login button............................................passed
+And user clicks on logout button to logout..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Infinite Scroll feature" name="Verify scroll" time="16.662531">
+<system-out><![CDATA[Given user navigates to the url.............................................passed
+And user is on Infinite Scroll page.........................................passed
+When user scrolls to bottom of page twice...................................passed
+And user scrolls back to top of the page....................................passed
+Then user should see the text Infinite Scroll...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Key presses" name="Navigate to key presses page" time="4.310187">
+<system-out><![CDATA[Given I navigate to home page...............................................passed
+When I click on Key Presses link............................................passed
+Then I should navigate to Key Presses page..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Key presses" name="Verify different key presses" time="16.677924">
+<system-out><![CDATA[Given a web browser is at Key Presses page..................................passed
+When I press Ctrl key.......................................................passed
+Then a Ctrl key confirmation message is displayed...........................passed
+When I press Alt key........................................................passed
+Then a Alt key confirmation message is displayed............................passed
+When I press R key..........................................................passed
+Then a R key confirmation message is displayed..............................passed
+When I press S key..........................................................passed
+Then a S key confirmation message is displayed..............................passed
+]]></system-out>
+</testcase>
+</testsuite>

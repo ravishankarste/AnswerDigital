@@ -1,0 +1,576 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Navigate to Form Authentication page",
+        "description": "",
+        "id": "form-authentication;navigate-to-form-authentication-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5329162400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user navigate to url",
+            "match": {
+              "location": "FormAuthTest.user_navigate_to_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 602710900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click on login Form Authentication link",
+            "match": {
+              "location": "FormAuthTest.user_click_on_login_Form_Authentication_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 60932700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should navigate to login page",
+            "match": {
+              "location": "FormAuthTest.user_should_be_navigate_to_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 20,
+            "value": "#Correct username, incorrect password"
+          }
+        ],
+        "line": 21,
+        "name": "Verify login functionality",
+        "description": "",
+        "id": "form-authentication;verify-login-functionality;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8679500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is at Form Authentication page",
+            "match": {
+              "location": "FormAuthTest.user_is_at_Form_Authentication_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 176510300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user enters username \"tomsmith\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "tomsmith",
+                  "offset": 22
+                }
+              ],
+              "location": "FormAuthTest.user_enters_username(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 218003500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user enters password \"SuperSecretPassword!123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SuperSecretPassword!123",
+                  "offset": 22
+                }
+              ],
+              "location": "FormAuthTest.user_enters_password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 589642300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "FormAuthTest.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 22,
+            "value": "##Incorrect username, correct password"
+          }
+        ],
+        "line": 23,
+        "name": "Verify login functionality",
+        "description": "",
+        "id": "form-authentication;verify-login-functionality;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 38005200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is at Form Authentication page",
+            "match": {
+              "location": "FormAuthTest.user_is_at_Form_Authentication_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 179056300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user enters username \"tomsmith123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "tomsmith123",
+                  "offset": 22
+                }
+              ],
+              "location": "FormAuthTest.user_enters_username(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 221498100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user enters password \"SuperSecretPassword!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SuperSecretPassword!",
+                  "offset": 22
+                }
+              ],
+              "location": "FormAuthTest.user_enters_password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 552850200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "FormAuthTest.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 35,
+            "value": "##Correct username, correct password"
+          }
+        ],
+        "line": 36,
+        "name": "Verify login functionality",
+        "description": "",
+        "id": "form-authentication;verify-login-functionality;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11160900,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user is at Form Authentication page",
+            "match": {
+              "location": "FormAuthTest.user_is_at_Form_Authentication_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 129831400,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user enters username \"tomsmith\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "tomsmith",
+                  "offset": 22
+                }
+              ],
+              "location": "FormAuthTest.user_enters_username(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 215610400,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user enters password \"SuperSecretPassword!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SuperSecretPassword!",
+                  "offset": 22
+                }
+              ],
+              "location": "FormAuthTest.user_enters_password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 540730400,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "FormAuthTest.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 662117500,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user clicks on logout button to logout",
+            "match": {
+              "location": "FormAuthTest.userClicksOnLogoutButtonToLogout()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Form Authentication",
+    "description": "In order to login\r\nAs a valid user\r\nI have to provide valid user name and password",
+    "id": "form-authentication",
+    "keyword": "Feature",
+    "uri": "FormAuth.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Verify scroll",
+        "description": "",
+        "id": "infinite-scroll-feature;verify-scroll",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3773330600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user navigates to the url",
+            "match": {
+              "location": "InfiniteScrollTest.user_navigates_to_the_Url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 511678200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on Infinite Scroll page",
+            "match": {
+              "location": "InfiniteScrollTest.user_Is_On_InfiniteScrollPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9111745000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user scrolls to bottom of page twice",
+            "match": {
+              "location": "InfiniteScrollTest.user_Scrolls_To_Bottom_Of_Page_Twice()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 60949400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user scrolls back to top of the page",
+            "match": {
+              "location": "InfiniteScrollTest.user_Scrolls_Back_To_Top_Of_The_Page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3204827600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user should see the text Infinite Scroll",
+            "match": {
+              "location": "InfiniteScrollTest.user_Should_See_The_Text_InfiniteScroll()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Infinite Scroll feature",
+    "description": "In order to gain access to the feature\nAs any user\nI would enter the Url in the browser",
+    "id": "infinite-scroll-feature",
+    "keyword": "Feature",
+    "uri": "infiniteScroll.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Navigate to key presses page",
+        "description": "",
+        "id": "key-presses;navigate-to-key-presses-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3814228900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I navigate to home page",
+            "match": {
+              "location": "KeyPressesTest.i_Navigate_To_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 438044700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on Key Presses link",
+            "match": {
+              "location": "KeyPressesTest.i_Click_On_Key_Presses_Link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 57913000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should navigate to Key Presses page",
+            "match": {
+              "location": "KeyPressesTest.iShouldBeNavigateToKeyPressesPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 12,
+            "value": "#Scenario 1 Verify when Ctrl key is pressed it displays confirmation msg"
+          }
+        ],
+        "line": 13,
+        "name": "Verify different key presses",
+        "description": "",
+        "id": "key-presses;verify-different-key-presses",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7756800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "a web browser is at Key Presses page",
+            "match": {
+              "location": "KeyPressesTest.a_WebBrowser_Is_At_KeyPressesPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 113527800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I press Ctrl key",
+            "match": {
+              "location": "KeyPressesTest.i_Press_CtrlKey()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3079587300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "a Ctrl key confirmation message is displayed",
+            "match": {
+              "location": "KeyPressesTest.a_Ctrl_key_Confirmation_Message_IsDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 61849000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I press Alt key",
+            "match": {
+              "location": "KeyPressesTest.i_Press_AltKey()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3054290200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "a Alt key confirmation message is displayed",
+            "match": {
+              "location": "KeyPressesTest.a_Alt_Key_Confirmation_Message_IsDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 62351600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I press R key",
+            "match": {
+              "location": "KeyPressesTest.iPressRKey()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3046490500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "a R key confirmation message is displayed",
+            "match": {
+              "location": "KeyPressesTest.a_R_Key_Confirmation_Message_IsDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 65096500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I press S key",
+            "match": {
+              "location": "KeyPressesTest.i_Press_S_Key()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7186974700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "a S key confirmation message is displayed",
+            "match": {
+              "location": "KeyPressesTest.a_S_Key_Confirmation_Message_IsDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Key presses",
+    "description": "In order to access Key Presses option\nAs a new user\nI have to launch url in browser.",
+    "id": "key-presses",
+    "keyword": "Feature",
+    "uri": "keyPresses.feature"
+  }
+]
