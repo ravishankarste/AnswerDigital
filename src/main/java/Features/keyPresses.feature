@@ -14,8 +14,8 @@ Feature:  Key presses
     Given a web browser is at Key Presses page
     When  user presses Ctrl key
     Then  a Ctrl key confirmation message is displayed
-   When   user presses Alt key
-    Then  a Alt key confirmation message is displayed
+   When   user presses P key
+    Then  a P key confirmation message is displayed
     When  user presses R key
     Then  a R key confirmation message is displayed
     When  user presses S key

@@ -15,18 +15,18 @@ public class KeyPressesTest extends BaseClass {
     public KeyPressesTest() throws AWTException {
     }
 
-    @Given("^I navigate to home page$")
+    @Given("^user navigates to home page$")
     public void i_Navigate_To_Home_Page() {
         initialization();
     }
 
 
-    @When("^I click on Key Presses link$")
+    @When("^user clicks on Key Presses link$")
     public void i_Click_On_Key_Presses_Link() {
         HomePage.clickOnKeyPressesLink();
     }
 
-    @Then("^I should navigate to Key Presses page$")
+    @Then("^user should navigate to Key Presses page$")
     public void iShouldBeNavigateToKeyPressesPage() {
         //Assert by Text on page
         String keyPressesPageText = KeyPressesPage.keyPressesPageTitle.getText();
@@ -41,7 +41,7 @@ public class KeyPressesTest extends BaseClass {
         Assert.assertEquals(actualUrl, currentUrlUrl);
     }
 
-    @When("^I press Ctrl key$")
+    @When("^user presses Ctrl key$")
     public void i_Press_CtrlKey() {
         KeyPressesPage.inputField.click();
         r.keyPress(KeyEvent.VK_CONTROL);
@@ -55,23 +55,23 @@ public class KeyPressesTest extends BaseClass {
         scriptWait();
     }
 
-    @When("^I press Alt key$")
-    public void i_Press_AltKey() {
+    @When("^user presses P key$")
+    public void i_Press_P_Key() {
 
         KeyPressesPage.inputField.click();
         r.keyPress(KeyEvent.VK_P);
     }
 
-    @Then("^a Alt key confirmation message is displayed$")
+    @Then("^a P key confirmation message is displayed$")
     public void a_Alt_Key_Confirmation_Message_IsDisplayed() throws InterruptedException {
-        String controlAltText = KeyPressesPage.confirmMsg.getText();
-        Assert.assertEquals("You entered: P", controlAltText);
+        String pText = KeyPressesPage.confirmMsg.getText();
+        Assert.assertEquals("You entered: P", pText);
         r.keyRelease(KeyEvent.VK_P);
         scriptWait();
     }
 
-    @When("^I press R key$")
-    public void iPressRKey() {
+    @When("^user presses R key$")
+    public void i_Press_R_Key() {
         KeyPressesPage.inputField.click();
         r.keyPress(KeyEvent.VK_R);
     }
@@ -84,7 +84,7 @@ public class KeyPressesTest extends BaseClass {
         scriptWait();
     }
 
-    @When("^I press S key$")
+    @When("^user presses S key$")
     public void i_Press_S_Key() {
         KeyPressesPage.inputField.click();
         r.keyPress(KeyEvent.VK_S);
