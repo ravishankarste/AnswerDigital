@@ -1,24 +1,24 @@
 Feature:  Key presses
   In order to access Key Presses option
   As a new user
-  I have to launch url in browser.
+  User has to launch url in browser.
 
   Scenario: Navigate to key presses page
 
-    Given I navigate to home page
-    When  I click on Key Presses link
-    Then  I should navigate to Key Presses page
+    Given user navigates to home page
+    When  user clicks on Key Presses link
+    Then  user should navigate to Key Presses page
 
     #Scenario 1 Verify when Ctrl key is pressed it displays confirmation msg
   Scenario: Verify different key presses
     Given a web browser is at Key Presses page
-    When  I press Ctrl key
+    When  user presses Ctrl key
     Then  a Ctrl key confirmation message is displayed
-   When  I press Alt key
+   When   user presses Alt key
     Then  a Alt key confirmation message is displayed
-    When  I press R key
+    When  user presses R key
     Then  a R key confirmation message is displayed
-    When  I press S key
+    When  user presses S key
     Then  a S key confirmation message is displayed
 
 
